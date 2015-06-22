@@ -23,7 +23,7 @@ import org.openqa.selenium.firefox.FirefoxProfile;
  * </li>
  * <li>close firefox</li>
  * <li>reconnect your network adapter</li>
- * <li>start firefox several times -> no updates should be installed</li></ol>
+ * <li>start firefox several times -&gt; no updates should be installed</li></ol>
  */
 public class FirefoxPortable{
 	private static final String FIREFOX_PORTABLE_PATH_PROPERTY = "firefox.portable.path";
@@ -67,7 +67,7 @@ public class FirefoxPortable{
 	
 	/**
 	 * @param language e.g. 'de' or 'en'.
-	 * @return
+	 * @return This instance of the FirefoxPortable builder.
 	 */
 	public FirefoxPortable setLanguage(String language){
 		profile().setPreference("intl.accept_languages", language);
